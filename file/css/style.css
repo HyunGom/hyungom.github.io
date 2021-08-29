@@ -1038,4 +1038,16 @@ img {
     .services__content {
         padding-top: 3.0rem;
     }
+
+    .scroll {
+        right: 4.5rem;
+    }
+
+    .nav__link {
+        font-size: var(--font-small);
+    }
+
+    .nav__logo {
+        font-size: var(--font-h1);
+    }
 }

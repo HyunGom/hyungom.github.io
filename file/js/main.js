@@ -33,11 +33,6 @@ function toggleSkills() {
     // selected skill
     let itemClass = this.parentNode.className
 
-    // // close all skills
-    // for(i = 0; i < skillsContent.length; i++) {
-    //     skillsContent[i].className = 'skills__content skills__close'
-    // }
-
     // if was closed then open it up otherwise stay closed as it is
     if(itemClass === 'skills__content skills__close') {
         this.parentNode.className = 'skills__content skills__open'

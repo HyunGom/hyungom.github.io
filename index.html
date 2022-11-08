@@ -8,7 +8,9 @@
 
     <!-- unicorn from iconscout -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
-    <!-- css style-->
+    <!-- swiper -->
+    <link rel="stylesheet" href="/file/css/swiper-bundle.min.css">
+    <!-- style.css-->
     <link rel="stylesheet" href="/file/css/style.css">
     <title>Hyunook Kwon | Software Developer</title>
 </head>
@@ -46,8 +48,8 @@
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#project" class="nav__link">
-                            <i class="uil uil-file nav__icon"></i> Project
+                        <a href="#portfolio" class="nav__link">
+                            <i class="uil uil-file nav__icon"></i> Portfolio
                         </a>
                     </li>
                     <li class="nav__item">
@@ -428,9 +430,38 @@
                 </div>
             </div>
         </section>
+        <!-- PORTFOLIO -->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section__title">Portfolio</h2>
+            <span class="section__subtitle">Most Recent Projects</span>
+            <div class="portfolio__container container swiper swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- portfolio 1: devsearch -->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="file/img/portfolio-devsearch.png" alt="DevSearch Banner Image" class="portfolio__img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">DevSearch</h3>
+                            <p class="portfolio__description">
+                                Fullstack Django web application from Dennis Ivy Django course
+                            </p>
+                            <a href="https://devsearch-production.up.railway.app/"
+                                class="button button--flex button--small portfolio__button">
+                                Link <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Swiper functionality -->
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-pagination"></div>
 
-        <!-- PROJECT -->
-
+            </div>
+        </section>
         <!-- CONTACT ME -->
         <section class="section contact" id="contact">
             <h2 class="section__title">Contact Me</h2>
@@ -438,14 +469,6 @@
 
             <div class="grid container contact__container">
                 <div>
-                    <!-- phone -->
-                    <!--                     <div class="contact__information">
-                        <i class="uil uil-calling contact__icon"></i>
-                        <div>
-                            <h3 class="contact__title">Call Me</h3>
-                            <span class="contact__subtitle">404-819-0964</span>
-                        </div>
-                    </div> -->
                     <!-- email -->
                     <div class="contact__information">
                         <i class="uil uil-envelope contact__icon"></i>
@@ -535,6 +558,7 @@
     </div>
 
 
+    <script src="file/js/swiper-bundle.min.js"></script>
     <script src="file/js/main.js"></script>
 
 </body>
